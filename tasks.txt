@@ -3,10 +3,13 @@ REST API : JSON
 GET /users : List all users as an HTML document
 GET /api/users : List all users as a JSON document
 
-GET /users/{id} : Get a user by id
+GET /api/users/:id : Get the user by id (DYNAMIC PATH PARAMETER)
+if you see anything like ":id"(express feature) in the url, it means that it is a variable or it is dynamic and can be altered to get the desired data depending upon the variable.
+
 
 POST/users : Create a new user
 
-PATCH/users/{id} : Edit the user by id 
+PATCH /api/users/:id : Edit the user by id (DYNAMIC PATH PARAMETER)
+if you see anything like ":id" in the url, it means that it is a variable or it is dynamic and can be altered to get the desired data depending upon the variable.
 
 DELETE/users/{id} : Delete the user by id
